@@ -1,0 +1,9 @@
+set tics scale 0.75
+set xtics 1
+set ytics 1
+set yrange [-10:10]
+set xrange [-1:1]
+set xlabel 'x-axis'
+set ylabel 'y-axis'
+set zeroaxis
+plot 'points.txt'

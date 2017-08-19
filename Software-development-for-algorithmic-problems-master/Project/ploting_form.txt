@@ -1,0 +1,12 @@
+f(x,y)= 1+y*x-x+y
+g(x,y)= 1+y*x**2-x**2+2*y*x+y+x
+set contour base 
+set cntrparam levels discrete 0.0 
+unset surface 
+set table 'curve.dat' 
+splot f(x,y) 
+replot g(x,y) 
+unset table 
+set yrange[-11:9] 
+set xrange[-10:10] 
+plot 'curve.dat' w l 
